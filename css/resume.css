@@ -4,9 +4,11 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
  */
 body {
+  background-color: #240a41;
   font-family: 'Open Sans', serif;
   padding-top: 54px;
-  color: #868e96; }
+  color: #b1b1b1;
+ }
 
 @media (min-width: 992px) {
   body {
@@ -104,7 +106,7 @@ section.resume-section {
     padding-bottom: 3rem !important; } }
 
 .bg-primary {
-  background-color: #BD5D38 !important; }
+  background-color: #be0000 !important; }
 
 .text-primary {
   color: #BD5D38 !important; }
