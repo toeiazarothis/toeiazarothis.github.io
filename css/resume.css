@@ -119,3 +119,9 @@ a {
 .card-body {
   background-color: #240a41;
 }
+
+@media (min-width: 992px) {
+  .modal-lg {
+    max-width: 99%;
+  }
+}
