@@ -1,15 +1,5 @@
 <?php require ('liste_question.php')?>
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-
-  </body>
-</html>
-<!DOCTYPE html>
 <html lang="fr">
   <head>
 
@@ -87,8 +77,11 @@
       <div class="container">
         <div class="row">
           <div class="col align-self-center justify-content-center">
-            <?php echo $randomNumber; ?><br>
-            <?php echo $question; ?>
+            randomNumberQuestion = <?php echo $randomNumberQuestion; ?><br>
+            randomNumberTheme = <?php echo $randomNumberTheme; ?><br>
+            Theme du random = <?php echo $theme; ?> <br>
+            ThemeDeLaQuestion = <?php echo $themeQuestion; ?> <br>
+            Question = <?php echo $question; ?>
           </div>
         </div>
       </div>
