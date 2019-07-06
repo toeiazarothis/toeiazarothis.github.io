@@ -5,15 +5,15 @@
   // Choix du theme avec le $randomNumberTheme.
 
   if ($randomNumberTheme == 1) {
-    $theme == "CultureG";
+    $theme = "CultureG";
   } elseif ($randomNumberTheme == 2) {
-    $theme == "HistoireGeo";
+    $theme = "HistoireGeo";
   } elseif ($randomNumberTheme == 3) {
-    $theme == "PopCulture";
+    $theme =  "PopCulture";
   } elseif ($randomNumberTheme == 4) {
-    $theme == "Musique";
+    $theme = "Musique";
   } else {
-    $theme == "Error";
+    $theme = "Error";
   }
 
 
@@ -21,7 +21,7 @@
 
 
 
-  if ($theme = 'CultureG') {
+  if ($theme == 'CultureG') {
     $themeQuestion = "Voici une question de culture G";
     if ($randomNumberQuestion == 1) {
       $question = "Question 1";
@@ -45,7 +45,7 @@
         $question = "La question ne peux pas etre charger. Relance";
         //
       }
-  } elseif ($theme = 'HistoireGeo') {
+  } elseif ($theme == 'HistoireGeo') {
     $themeQuestion = "Voici une question d'histoire geographie";
     if ($randomNumberQuestion == 1) {
       $question = "Question 1";
@@ -69,7 +69,7 @@
         $question = "La question ne peux pas etre charger. Relance";
         //
       }
-  } elseif ($theme = 'PopCulture') {
+  } elseif ($theme == 'PopCulture') {
     $themeQuestion = "Voici une question de Pop Culture";
       if ($randomNumberQuestion == 1) {
         $question = "Question 1";
@@ -93,8 +93,8 @@
         $question = "La question ne peux pas etre charger. Relance";
         //
       }
-  } elseif ($theme = "Musique") {
-    $themeQuestion == "Voici une question sur la musique";
+  } elseif ($theme == "Musique") {
+    $themeQuestion = "Voici une question sur la musique";
       if ($randomNumberQuestion == 1) {
         $question = "Question 1";
     } elseif ($randomNumberQuestion == 2) {
@@ -119,9 +119,13 @@
       }
     }elseif ($theme == "Error") {
       $themeQuestion = "Une erreur a eu lieu sur la choix du theme";
+      $question = "La question ne peux pas etre charger. Relance";
+
     }
      else {
     $themeQuestion = "Vous n'avez pas choisi de theme";
+    $question = "La question ne peux pas etre charger. Relance";
+
 
   }
 
