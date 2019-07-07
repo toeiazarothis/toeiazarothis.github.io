@@ -1,4 +1,4 @@
-<?php require ('liste_question.php')?>
+_<?php require ('liste_question.php')?>
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -13,22 +13,24 @@
     <!-- Opengraph -->
     <meta property="og:title" content="KiKeKoi un Jeu de société a faire en debut de soirée">
     <meta property="og:type" content="">
-    <meta property="og:url" content="">
+    <meta property="og:url" content="kikekoi.rf.gd">
     <meta property="og:image" content="img">
     <meta property="og:site_name" content="Le KiKeKoi">
     <meta property="og:locale" content="fr">
 
     <!-- Bootstrap core CSS -->
-    <link href="../old/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/v4-shims.css">
-
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!-- Custom styles for this template -->
     <link href="css/custom.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/agency.css" rel="stylesheet">
 
     <!--Custom favicon-->
     <link rel="icon" type="image/png" href="logo.png"/>
@@ -76,12 +78,17 @@
     <section id="question">
       <div class="container">
         <div class="row">
-          <div class="col align-self-center justify-content-center">
-            randomNumberQuestion = <?php echo $randomNumberQuestion; ?><br>
-            randomNumberTheme = <?php echo $randomNumberTheme; ?><br>
-            Theme du random = <?php echo $theme; ?> <br>
-            ThemeDeLaQuestion = <?php echo $themeQuestion; ?> <br>
-            Question = <?php echo $question; ?>
+          <div class="col align-self-center justify-content-center text-center">
+            <p>
+              randomNumberQuestion = <?php echo $randomNumberQuestion; ?><br>
+              randomNumberTheme = <?php echo $randomNumberTheme; ?><br>
+              Theme du random = <?php echo $theme; ?> <br>
+              ThemeDeLaQuestion = <?php echo $themeQuestion; ?> <br>
+              Question = <?php echo $question; ?><br>
+            </p>
+
+            <button type="button" class="btn btn-success btn-xl" onclick='location.reload();'> Recharger la page</button>
+
           </div>
         </div>
       </div>
